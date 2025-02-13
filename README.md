@@ -1,4 +1,4 @@
-# git_bash
+# Работа с git и bash
 
 [Задача 1](https://github.com/ZzzYouth/git_bash/blob/main/bash1.txt.txt)
 
