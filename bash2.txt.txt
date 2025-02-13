@@ -1,0 +1,59 @@
+
+В файл bash2.txt добавлены следующие команды 
+
+2. $ cd ~ | Зайти в домашнюю директорию через терминал.
+
+3. $ mkdir test3 | Создать папку test3
+
+4. Добавить в папку test3 три файла 4, 5 и 6, в каждом из которых должно быть по 4 строки row1, row2, row3, row4
+
+$ cd test3
+$ touch file4.txt file5.txt file6.txt
+$ echo -e "row1\nrow2\nrow3\nrow4" > ~/test3/file4.txt
+$ echo -e "row1\nrow2\nrow3\nrow4" > ~/test3/file5.txt
+$ echo -e "row1\nrow2\nrow3\nrow4" > ~/test3/file6.txt
+
+5. $ grep "row2" ~/test3/file5.txt | Найдите строку row2 в файле 5
+
+6. $ grep "row" ~/test3/file5.txt  | Найдите строку row в папке test3
+
+7. $ grep -c "row" ~/test3/file6.txt | Посчитайте сколько строк с содержимым row в файле 6
+
+8. $ find ~/test3 -name "file5.txt"  | Найдите файл 5 внутри папки test3
+
+9. $ find ~/test3 -name "file5.txt" -exec rm {} \; | Используя команду find, удалите файл 5
+
+10. $ echo "test" >> ~/test3/file4.txt | Используя команду echo, добавьте слово test в файл 4
+
+11. $ sed -i 's/test/fail/g' ~/test3/file4.txt | Замените слово test в файле 4 на fail
+
+12. $ echo "test" >> ~/test3/file4.txt | Добавьте в файл 4 слово test так, чтобы сохранилось содержимое
+
+13. $ ps aux | Просмотрите все процессы для юзеров не только в консоли, которые происходят в системе
+
+14. $ kill 666 | Убейте процесс 666 в консоли (можно не убивать, а просто написать команду)
+
+15. $ ping rusau.net | Узнайте доступность ресурса rusau.net, используя ping
+
+16. ping -n 5 rusau.net | Отправьте 5 пакетов на сайт rusau.net
+
+17. Используя GET и команду curl, получите информацию о зарегистрированных питомцах с любым статусом на https://petstore.swagger.io/
+
+$ curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available" -H "accept: application/json"
+
+18. Используя POST и команду curl, создайте нового пользователя на https://petstore.swagger.io/
+
+$ curl -X POST "https://petstore.swagger.io/v2/user" \
+> -H "Content-Type: application/json" \
+> -d '{
+>   "id": 0,
+>   "username": "newuser",
+>   "firstName": "John",
+>   "lastName": "Doe",
+>   "email": "john.doe@example.com",
+>   "password": "password123",
+>   "phone": "1234567890",
+>   "userStatus": 1
+> }'
+hone": "1234567890",\x0a"userStatus": 1\x0a}';9001acf2-e978-48af-b72d-9664a0b3f2d9{"code":200,"type":"unknown","message":"9223372036854775807"}
+
